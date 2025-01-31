@@ -1,0 +1,11 @@
+Set-Location packages/eslint-plugin
+pnpm build
+Set-Location ../types
+pnpm build
+node ./dist/tool/backend-code-gen.js
+Set-Location ../backend
+pnpm build
+Set-Location ../frontend
+pnpm build
+Set-Location ../upload-tool
+pnpm build

@@ -1,0 +1,8 @@
+import type { Express } from 'express';
+import { createReqStreamApi } from '../../create-req-stream-api';
+import type { {{resType}} } from 'types/api/req-stream/{{apiPath}}';
+
+export const handle{{apiName}}Api = (app: Express) =>
+    createReqStreamApi<{{resType}}>(app, '/{{apiPath}}', (req, res) => {
+        // TODO
+    });

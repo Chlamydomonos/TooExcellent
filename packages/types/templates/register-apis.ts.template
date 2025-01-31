@@ -1,0 +1,5 @@
+import type { Express } from 'express';
+{{imports}}
+export const registerAPIs = (app: Express) => {
+{{funcs}}
+}
