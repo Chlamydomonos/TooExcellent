@@ -3,7 +3,7 @@ import { platform } from 'os';
 
 const checkPwshExists = () => {
     return new Promise((resolve, reject) => {
-        exec('where pwsh', (err, stdout) => {
+        exec('where pwsh', (err) => {
             if (err) {
                 resolve(false);
                 return;
